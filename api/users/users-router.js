@@ -86,8 +86,8 @@ router.post(
 
 		try {
 			const result = await Post.insert({
-				usert_id: req.params.id,
-				text: req.tet,
+				user_id: req.params.id,
+				text: req.text,
 			});
 			res.status(201).json(result);
 		} catch (error) {
